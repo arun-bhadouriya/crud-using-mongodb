@@ -1,4 +1,5 @@
 require("dotenv").config();
+const port = process.env.PORT || 3500;
 const express = require("express");
 const mongoose = require("mongoose");
 const app = express();
@@ -75,6 +76,6 @@ app.post("/user/update/:user_mail/:user_contact", async (req, res) => {
 	res.redirect("/");
 });
 
-app.listen(3500, (req, res) => {
-	console.log(`http://localhost:3500`);
+app.listen(port, (req, res) => {
+	console.log(`http://localhost:${port}`);
 });
