@@ -19,7 +19,7 @@ function closeEditNav() {
 	document.getElementById("showEditForm").style.width = "0%";
 }
 
-fetch("http://localhost:3500/users")
+fetch("https://ccrruudd.herokuapp.com/users")
 	.then((data) => data.json())
 	.then((x) => {
 		//add each user into the dom
