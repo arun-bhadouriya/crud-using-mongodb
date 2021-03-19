@@ -1,3 +1,4 @@
+require("dotenv").config();
 const express = require("express");
 const mongoose = require("mongoose");
 const app = express();
@@ -5,7 +6,7 @@ const bodyParser = require("body-parser");
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.json({ extended: true }));
-const uri = "mongodb://localhost:27017/crud-arun";
+const uri = process.env.URI;
 
 async function arun() {
 	await mongoose.connect(
