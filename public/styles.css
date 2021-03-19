@@ -1,0 +1,155 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+header {
+	margin: 1.5em;
+	text-align: center;
+}
+header h1 {
+	border: 1px solid rgba(12, 14, 9, 0.596);
+	display: inline;
+	padding: 10px;
+	color: white;
+	background-color: rgba(141, 210, 30, 0.596);
+	/* text-decoration: underline; */
+}
+
+table {
+	background-color: rgba(141, 210, 30, 0.596);
+	border: 1px solid gray;
+	margin: 20px;
+	max-width: 80vw;
+	margin: auto;
+	min-height: 100px;
+	transition-duration: 0.4s;
+}
+
+thead th,
+tbody td {
+	border: 1px solid gray;
+}
+
+thead th {
+	padding: 20px;
+}
+
+tbody td {
+	padding: 15px;
+	margin: 10px;
+}
+
+.btn {
+	background-color: rgba(141, 210, 30, 0.596);
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	font-weight: 550;
+	margin: 4px 2px;
+	cursor: pointer;
+	-webkit-transition-duration: 0.4s; /* Safari */
+	transition-duration: 0.4s;
+}
+.btn:hover {
+	box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+		0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.btnCenter {
+	/* text-align: center; */
+	/* margin-left: 50px; */
+	width: 80vw;
+	margin: auto;
+	/* background-color: crimson; */
+}
+
+.el {
+	color: black;
+	background-color: rgba(128, 255, 0, 0);
+}
+
+.m {
+	margin-left: 40px;
+	margin-bottom: 10px;
+}
+
+.form {
+	width: 100vw;
+	height: 100vh;
+	background-color: rgba(141, 210, 30, 0.596);
+	text-align: center;
+	/* margin: auto; */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/* position: absolute; */
+}
+
+.form input {
+	display: block;
+	margin: 2px;
+	padding: 15px;
+	width: 250px;
+	border-radius: 10px;
+}
+
+/* .form input:focus {
+	border: 1px solid blue;
+} */
+
+.overlay {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: rgb(0, 0, 0);
+	background-color: rgba(0, 0, 0, 0.9);
+	overflow-x: hidden;
+	transition: 0.5s;
+}
+
+.overlay-content {
+	position: relative;
+	top: 25%;
+	width: 100%;
+	text-align: center;
+	margin-top: 30px;
+}
+
+.overlay a {
+	padding: 8px;
+	text-decoration: none;
+	font-size: 36px;
+	color: #818181;
+	display: block;
+	transition: 0.3s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+	color: #f1f1f1;
+}
+
+.overlay .closebtn {
+	position: absolute;
+	top: 20px;
+	right: 45px;
+	font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+	.overlay a {
+		font-size: 20px;
+	}
+	.overlay .closebtn {
+		font-size: 40px;
+		top: 15px;
+		right: 35px;
+	}
+}

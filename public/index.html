@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+			integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="styles.css" />
+		<title>CRUD</title>
+	</head>
+	<body>
+		<header>
+			<h1>CRUD Operation's</h1>
+		</header>
+
+		<div class="btnCenter">
+			<button class="btn m" onclick="openNav()">ADD</button>
+			<table>
+				<thead>
+					<th>ID</th>
+					<th>Name</th>
+					<th>Email</th>
+					<th>Contact</th>
+					<th>Address</th>
+				</thead>
+				<tbody id="userTable"></tbody>
+			</table>
+		</div>
+
+		<!-- FORM FULLSCREEN -->
+		<div class="form overlay" id="showForm">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+				>&times;</a
+			>
+			<form action="/add" method="POST">
+				<!-- <input type="text" name="id" placeholder="id" /> -->
+				<input type="text" name="name" placeholder="name" />
+				<input type="text" name="email" placeholder="email" />
+				<input type="text" name="contact" placeholder="contact number" />
+				<input type="text" name="address" placeholder="address" />
+				<button
+					type="submit"
+					class="btn"
+					style="width: 95%; border-radius: 10px"
+				>
+					Add
+				</button>
+			</form>
+		</div>
+
+		<div id="updateForm"></div>
+
+		<!-- script -->
+		<script src="./script.js"></script>
+	</body>
+</html>
