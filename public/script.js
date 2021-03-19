@@ -48,7 +48,7 @@ fetch("http://localhost:3500/users")
 				console.log("clicked");
 				const email = el.parentElement.previousElementSibling.previousElementSibling.previousElementSibling.textContent.trim();
 				console.log(email);
-				fetch(`http://localhost:3500/user/${email}`, {
+				fetch(`https://ccrruudd.herokuapp.com/user/${email}`, {
 					method: "DELETE",
 					headers: {
 						"Content-Type": "application/json",
